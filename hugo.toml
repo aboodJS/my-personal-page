@@ -1,0 +1,4 @@
+baseURL = 'https://ajs.dev/'
+languageCode = 'ar-jo'
+title = 'My New Hugo Site'
+theme = 'ananke'
