@@ -12,7 +12,7 @@
 
     <style>
       body {
-        height: 100vh;
+        height: fit-content;
       }
       ul {
         display: flex;
@@ -40,13 +40,39 @@
       #tools {
         text-align: center;
       }
-      #tools img {
-        height: 150px;
+
+      div .img {
+        height: 200px;
+        width: 150px;
+        background-size: contain;
+        background-position: center;
       }
 
-      #tools .grid div {
+      #tools .grid > div {
+        border-radius: 8px;
         height: fit-content;
         box-shadow: 0 0 2px 2px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+      }
+
+      section {
+        text-align: center;
+      }
+
+      .projectbox {
+        border-radius: 8px;
+        height: fit-content;
+        box-shadow: 0 0 2px 2px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+
+      .projectbox img {
+        height: 400px;
       }
     </style>
     <title>Hello world!</title>
@@ -94,23 +120,44 @@
         </ul>
       </section>
       <section id="tools">
-        <h1>tools i use</h1>
+        <h1>what i use</h1>
         <div class="grid">
           <div class="toolbox">
-            <h3>HTML</h3>
-            <img src="html.png" alt="" />
+            <h3>vscodium</h3>
+            <div
+              class="img"
+              style="background-image: url('./VSCodium_Logo.png')"
+            ></div>
           </div>
           <div class="toolbox">
-            <h3>CSS</h3>
-            <img src="css.png" alt="" />
+            <h3>Linux Mint</h3>
+            <div
+              class="img"
+              style="background-image: url('./Logo_Linux_Mint.png')"
+            ></div>
           </div>
           <div class="toolbox">
-            <h3>JavaScript</h3>
-            <img src="javascript.png" alt="" />
+            <h3>postman</h3>
+            <div
+              class="img"
+              style="
+                background-image: url('./postman-logo-0087CA0D15-seeklogo.com.png');
+              "
+            ></div>
           </div>
-          <div class="toolbox">
-            <h3>VueJS</h3>
-            <img src="vuejs.png" alt="" />
+        </div>
+      </section>
+
+      <section id="projects">
+        <h1>projects i made</h1>
+        <div class="grid">
+          <div class="projectbox">
+            <h3>article fetcher</h3>
+            <img
+              src="./Screenshot-2024-11-22-at-18-33-47-Vite-App.png"
+              alt=""
+            />
+            <p>an article fetcher using the news api (uses an api key)</p>
           </div>
         </div>
       </section>
